@@ -1,0 +1,13 @@
+{
+	"type": "ckenja.crafter88:void",
+	"generator": {
+		"type": "minecraft:flat",
+		"settings": {
+			"biome": "ckenja.crafter88:void",
+			"lakes": false,
+			"features": false,
+			"layers": [],
+			"structure_overrides": []
+		}
+	}
+}

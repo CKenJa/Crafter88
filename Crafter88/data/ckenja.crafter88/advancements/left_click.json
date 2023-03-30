@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "entity": {
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"ckenja.crafter88.interaction\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "ckenja.crafter88:left_click/_"
+    }
+  }
