@@ -36,7 +36,7 @@
 
 #>
 #@within
-#   function ckenja.crafter88:tick/player/launch_vector*
+#   function ckenja.crafter88:tick/player/launch/*
     #declare score_holder $tick.player.launch.x
     #declare score_holder $tick.player.launch.y
     #declare score_holder $tick.player.launch.z

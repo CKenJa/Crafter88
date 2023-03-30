@@ -5,7 +5,7 @@
 # @within function ckenja.crafter88:tick/player/_
 
 function #oh_my_dat:please
-function ckenja.crafter88:tick/player/launch_vector.loop
+function ckenja.crafter88:tick/player/launch/loop
 tellraw @a {"score":{"name":"$x","objective":"delta.api.launch"}}
 tellraw @a {"score":{"name":"$y","objective":"delta.api.launch"}}
 tellraw @a {"score":{"name":"$z","objective":"delta.api.launch"}}
