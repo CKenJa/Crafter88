@@ -1,6 +1,6 @@
 #> ckenja.crafter88:place/marker/clone/anywhere
 #
-# as anywhereFunctionのmarker
+# as anywhere functionのmarker
 #
 # @within function ckenja.crafter88:place/marker/clone/listener
 
@@ -11,4 +11,3 @@ execute unless block ~ ~1 ~ #ckenja.crafter88:air run data modify storage ckenja
 execute unless block ~ ~-1 ~ #ckenja.crafter88:air run data modify storage ckenja.crafter88: place.marker.directionList append value {value:"-Y"}
 execute unless block ~ ~ ~1 #ckenja.crafter88:air run data modify storage ckenja.crafter88: place.marker.directionList append value {value:"+Z"}
 execute unless block ~ ~ ~-1 #ckenja.crafter88:air run data modify storage ckenja.crafter88: place.marker.directionList append value {value:"-Z"}
-kill @s

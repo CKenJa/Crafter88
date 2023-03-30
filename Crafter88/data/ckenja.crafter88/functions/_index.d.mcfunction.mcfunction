@@ -19,7 +19,7 @@
 #> const
 #@internal
     #declare score_holder #-1
-    #declare score_holder #10
+    #declare score_holder #attack_launch_modifier
 
 #>
 #@within

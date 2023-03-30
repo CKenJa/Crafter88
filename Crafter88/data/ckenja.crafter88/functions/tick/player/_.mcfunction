@@ -18,4 +18,4 @@
 execute if score @s ckenja.crater88.sneak matches 1.. run function ckenja.crafter88:tick/player/sneak
 effect give @s minecraft:jump_boost infinite 5 true
 
-execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.place.marker.attackDirections run function ckenja.crafter88:tick/player/launch_vector/_
+execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.place.marker.attackArray run function ckenja.crafter88:tick/player/launch/_

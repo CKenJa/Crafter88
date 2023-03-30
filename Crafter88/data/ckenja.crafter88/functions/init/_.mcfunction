@@ -11,5 +11,5 @@ scoreboard objectives add ckenja.crafter88.z dummy
 scoreboard objectives add ckenja.crater88.sneak minecraft.custom:minecraft.sneak_time
 
 scoreboard players set #-1 ckenja.crafter88 -1
-scoreboard players set #10 ckenja.crafter88 10
+scoreboard players set #attack_launch_modifier ckenja.crafter88 100
 scoreboard players set #place.marker.boolean ckenja.crafter88 1
