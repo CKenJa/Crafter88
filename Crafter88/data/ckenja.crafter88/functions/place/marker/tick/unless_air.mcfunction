@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function ckenja.crafter88:place/marker/tick/_
+# @within function ckenja.crafter88:place/marker/tick/count0
 
 data modify storage ckenja.crafter88: place.marker.directionList set value []
 

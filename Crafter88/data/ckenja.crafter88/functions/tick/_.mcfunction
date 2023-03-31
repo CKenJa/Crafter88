@@ -4,5 +4,17 @@
 #
 # @within minecraft:tick
 
-execute if score $tick ckenja.crafter88 matches 5.. run function ckenja.crafter88:tick/5
-scoreboard players add $tick ckenja.crafter88 1
+#>
+#@private
+#declare score_holder $tick.unequalTime
+
+#前提: 召喚時にプレイヤーごとにカウンターが設定。召喚スタートは0の時にしか行えない。
+execute store result storage ckenja.crafter88: tick.time int 1 run time query gametime
+
+# 召喚したエンティティがセレクタに引っかからないように時間一致を調べる。gametimeは太陽が止まってもちゃんと動く
+# カウンタを実行者に、オーナーのカウンタが1のmarkerに処理を実行。0じゃないのは召喚スタート時の即設置への対応が面倒だったから
+    execute as @e[type=marker,tag=ckenja.crafter88.place.marker] at @s run function ckenja.crafter88:place/marker/tick/pre
+
+# 各プレイヤーのカウンタを減らす。advancementに対応するためにmarker処理の前じゃないといけないけど面倒なのでまとめてやっちゃう
+# 置いた後に吹っ飛ぶ
+    execute as @a at @s run function ckenja.crafter88:tick/player/_

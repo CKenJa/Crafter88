@@ -4,7 +4,6 @@
 #
 # @within function ckenja.crafter88:tick/player/_
 
-function #oh_my_dat:please
 function ckenja.crafter88:tick/player/launch/loop
 execute if score $x delta.api.launch matches 7000.. run scoreboard players set $x delta.api.launch 7000
 execute if score $x delta.api.launch matches ..-7000 run scoreboard players set $x delta.api.launch -7000

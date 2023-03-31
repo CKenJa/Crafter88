@@ -380,5 +380,6 @@
             "}"
         ]
     },
-    "datapack.env.language": "ja"
+    "datapack.env.language": "ja",
+    "files.insertFinalNewline": true
 }

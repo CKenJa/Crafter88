@@ -18,4 +18,6 @@
 execute if score @s ckenja.crater88.sneak matches 1.. run function ckenja.crafter88:tick/player/sneak
 effect give @s minecraft:jump_boost infinite 5 true
 
+function #oh_my_dat:please
+function ckenja.crafter88:tick/player/precount
 execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.place.marker.attackArray run function ckenja.crafter88:tick/player/launch/_
