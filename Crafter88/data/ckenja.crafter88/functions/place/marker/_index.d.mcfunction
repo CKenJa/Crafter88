@@ -10,8 +10,3 @@
 #declare score_holder $place.marker.x
 #declare score_holder $place.marker.y
 #declare score_holder $place.marker.z
-
-#>
-#
-#@within function ckenja.crafter88:place/**
-    #declare score_holder $place.ownerID

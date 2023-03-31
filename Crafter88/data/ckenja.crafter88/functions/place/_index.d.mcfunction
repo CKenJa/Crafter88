@@ -2,5 +2,6 @@
 # @private
 
 #> Tag
-# @internal
+# @within function ckenja.crafter88:place/**
     #declare tag ckenja.crafter88.place.marker
+    #declare score_holder $place.ownerID
