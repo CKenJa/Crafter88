@@ -27,3 +27,10 @@
 #   function ckenja.crafter88:init/_
 #   * ckenja.crafter88:place/marker/**
     #declare score_holder #place.marker.boolean
+
+#> Tag
+# @within
+#   function ckenja.crafter88:place/**
+#   function ckenja.crafter88:tick/_
+    #declare tag ckenja.crafter88.place.marker
+    #declare score_holder $place.ownerID
