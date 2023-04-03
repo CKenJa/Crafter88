@@ -18,3 +18,4 @@
 tag @s add ckenja.crafter88.place.marker
 scoreboard players operation @s ckenja.crafter88 = $place.ownerID ckenja.crafter88
 function ckenja.crafter88:place/marker/tick/launch
+data modify entity @s data.ckenja.crafter88.time set from storage ckenja.crafter88: tick.time
