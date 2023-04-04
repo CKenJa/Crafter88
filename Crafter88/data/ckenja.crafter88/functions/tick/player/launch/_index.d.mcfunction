@@ -5,8 +5,13 @@
 # @private
 
 #>
-#@within
-#   function ckenja.crafter88:tick/player/launch/*
+#@within function ckenja.crafter88:tick/player/launch/*
     #declare score_holder $tick.player.launch.x
     #declare score_holder $tick.player.launch.y
     #declare score_holder $tick.player.launch.z
+
+#> deltaのスコア
+#@within function ckenja.crafter88:tick/player/launch/*
+    #declare score_holder $x
+    #declare score_holder $y
+    #declare score_holder $z

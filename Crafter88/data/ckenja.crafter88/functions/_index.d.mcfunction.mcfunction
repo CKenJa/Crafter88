@@ -37,6 +37,6 @@
 #> Tag
 # @within
 #   function ckenja.crafter88:place/**
-#   function ckenja.crafter88:tick/_
+#   function ckenja.crafter88:tick/**
     #declare tag ckenja.crafter88.place.marker
     #declare score_holder $place.ownerID
