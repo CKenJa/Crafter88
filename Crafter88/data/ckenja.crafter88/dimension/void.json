@@ -6,7 +6,12 @@
 			"biome": "ckenja.crafter88:void",
 			"lakes": false,
 			"features": false,
-			"layers": [],
+			"layers": [
+				{
+					"block": "minecraft:structure_void",
+					"height": 64
+				}
+			],
 			"structure_overrides": []
 		}
 	}

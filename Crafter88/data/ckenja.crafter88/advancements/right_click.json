@@ -1,16 +1,45 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:player_interacted_with_entity",
-        "conditions": {
-          "entity": {
-            "type": "minecraft:interaction",
-            "nbt": "{Tags:[\"ckenja.crafter88.interaction\"]}"
-          }
+	"criteria": {
+		"interaction": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:interaction",
+					"nbt": "{Tags:[\"ckenja.crafter88.interaction\"]}"
+				}
+			}
+		},
+		"using_item": {
+			"trigger": "minecraft:using_item"
+		},
+		"consume_item": {
+			"trigger": "minecraft:consume_item"
+		},
+		"shot_crossbow": {
+			"trigger": "minecraft:shot_crossbow"
+		},
+        "item_used_on_block": {
+			"trigger": "minecraft:item_used_on_block"
+		},
+        "placed_block": {
+            "trigger": "minecraft:placed_block"
+        },
+        "player_interacted_with_entity": {
+            "trigger": "minecraft:player_interacted_with_entity"
         }
-      }
-    },
-    "rewards": {
-      "function": "ckenja.crafter88:right_click/_"
-    }
+	},
+	"requirements": [
+		[
+			"interaction",
+			"using_item",
+			"consume_item",
+			"shot_crossbow",
+            "item_used_on_block",
+            "placed_block",
+            "player_interacted_with_entity"
+		]
+	],
+	"rewards": {
+		"function": "ckenja.crafter88:right_click/_"
+	}
 }

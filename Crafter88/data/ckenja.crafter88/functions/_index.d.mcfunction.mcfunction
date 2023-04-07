@@ -40,3 +40,7 @@
 #   function ckenja.crafter88:tick/**
     #declare tag ckenja.crafter88.place.marker
     #declare score_holder $place.ownerID
+
+#> player id by ohmydat
+#@internal
+    #declare score_holder $player_id
