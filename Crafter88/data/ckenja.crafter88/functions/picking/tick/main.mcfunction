@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function ckenja.crafter88:picking/tick/listener
+# @within function ckenja.crafter88:looking_at_function.player.listener
 
 scoreboard players operation $picking.tick.summon ckenja.crafter88 = @s OhMyDatID
 execute if entity @s[tag=ckenja.crafter88.picking.tick.have_display] run function ckenja.crafter88:picking/tick/teleport

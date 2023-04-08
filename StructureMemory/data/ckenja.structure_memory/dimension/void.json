@@ -1,9 +1,9 @@
 {
-	"type": "ckenja.crafter88:void",
+	"type": "ckenja.structure_memory:void",
 	"generator": {
 		"type": "minecraft:flat",
 		"settings": {
-			"biome": "ckenja.crafter88:void",
+			"biome": "ckenja.structure_memory:void",
 			"lakes": false,
 			"features": false,
 			"layers": [

@@ -3,6 +3,10 @@
 #
 #
 # @within function ckenja.crafter88:tick/player/_
+
+# precountでカウントリセットする前にチャンク開放チェック
+    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.place.marker.tick{counter:1} if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.place.marker.init{counter:0} run function ckenja.crafter88:tick/player/chunk_free
+
 #oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.tick.player.precount
 execute store result score $place.marker.tick.counter ckenja.crafter88 run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.place.marker.tick.counter
 execute if score $place.marker.tick.counter ckenja.crafter88 matches 1.. run scoreboard players remove $place.marker.tick.counter ckenja.crafter88 1

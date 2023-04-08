@@ -2,8 +2,7 @@
 #
 #
 #
-# @within function ckenja.crafter88:right_click/_
+# @within function ckenja.crafter88:skill/start
 
 scoreboard players operation $place.ownerID ckenja.crafter88 = @s OhMyDatID
-function #oh_my_dat:please
 execute if block ~ ~ ~ #ckenja.crafter88:air summon marker run function ckenja.crafter88:place/marker/init/first

@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function ckenja.crafter88:place/marker/tick/_
+# @within function ckenja.crafter88:place/marker/tick/launch
 
 function #oh_my_dat:please
 data modify storage ckenja.crafter88: place.marker.tick.attackDirectionArray.value set from storage ckenja.crafter88: place.marker.attackDirection

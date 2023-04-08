@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function ckenja.crafter88:place/marker/unless_air
+# @within function ckenja.crafter88:place/marker/tick/unless_air
 
 function ckenja.crafter88:place/marker/init/_
 scoreboard players set @s ckenja.crafter88.y -1

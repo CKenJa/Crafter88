@@ -1,7 +1,9 @@
 #> ckenja.crafter88:left_click/fake_break.loop
 # 通り道を、ぶっ壊すループ
 #
-# @within function ckenja.crafter88:left_click/fake_break
+# @within
+#   function ckenja.crafter88:left_click/fake_break
+#   function ckenja.crafter88:left_click/fake_break.loop2
 
 #declare score_holder $left_click.fake_break
 

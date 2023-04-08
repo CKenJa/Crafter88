@@ -2,7 +2,9 @@
 #
 #
 #
-# @within function ckenja.looking_at_function:looking
+# @within
+#   function ckenja.looking_at_function:loop2
+#   function ckenja.looking_at_function:marker
 
 #declare score_holder $picking.fake_break
 

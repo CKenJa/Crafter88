@@ -148,7 +148,7 @@
         "prefer double"
     ],
     "datapack.lint.nbtTypeCheck": [
-        "warning",
+        "hint",
         "strictly"
     ],
     "datapack.lint.selectorBracketSpacing": {
@@ -246,11 +246,11 @@
         true
     ],
     "datapack.lint.strictFunctionCheck": [
-        "information",
+        "warning",
         true
     ],
     "datapack.lint.strictFunctionTagCheck": [
-        "error",
+        "warning",
         true
     ],
     "datapack.lint.strictItemCheck": [

@@ -21,6 +21,7 @@
 function #oh_my_dat:please
 # これOhMyDat内部に保存してるような気がするがまぁいっか
     scoreboard players operation $player_id ckenja.crafter88 = @s OhMyDatID
+
 function ckenja.crafter88:tick/player/precount
 execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.place.marker.attackArray run function ckenja.crafter88:tick/player/launch/_
 
