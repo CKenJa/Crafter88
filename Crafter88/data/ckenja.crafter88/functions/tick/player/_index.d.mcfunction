@@ -6,5 +6,5 @@
 
 #>
 #@within function ckenja.crafter88:tick/player/**
-#declare score_holder $place.marker.tick.counter
-#declare score_holder $place.marker.tick.counter.init
+#declare score_holder $marker.tick.counter
+#declare score_holder $marker.tick.counter.init

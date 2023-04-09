@@ -14,7 +14,6 @@
 #declare score_holder $tick.player.launch.keep.y
 #declare score_holder $tick.player.launch.keep.z
 
-
 # 移動速度を0にしないとMotion関係なく動くだろお前
     attribute @s generic.movement_speed modifier add c145c31f-0f69-4e87-a826-0227fe45323c "stan" -1 add
 
@@ -33,11 +32,11 @@
     execute if score $z delta.api.launch matches ..-1 run scoreboard players set $z delta.api.launch -1
 
 # ブロックが生えてくる時間で1ブロック移動するようなMotionをかける
-    execute if score $place.marker.tick.counter ckenja.crafter88 matches ..1 run scoreboard players operation $tick.player.launch.goal ckenja.crafter88 = #player.launch.modifier.1 ckenja.crafter88
-    execute if score $place.marker.tick.counter ckenja.crafter88 matches 2 run scoreboard players operation $tick.player.launch.goal ckenja.crafter88 = #player.launch.modifier.2 ckenja.crafter88
-    execute if score $place.marker.tick.counter ckenja.crafter88 matches 3 run scoreboard players operation $tick.player.launch.goal ckenja.crafter88 = #player.launch.modifier.3 ckenja.crafter88
-    execute if score $place.marker.tick.counter ckenja.crafter88 matches 4 run scoreboard players operation $tick.player.launch.goal ckenja.crafter88 = #player.launch.modifier.4 ckenja.crafter88
-    execute if score $place.marker.tick.counter ckenja.crafter88 matches 5.. run scoreboard players operation $tick.player.launch.goal ckenja.crafter88 = #player.launch.modifier.5 ckenja.crafter88
+    execute if score $marker.tick.counter ckenja.crafter88 matches ..1 run scoreboard players operation $tick.player.launch.goal ckenja.crafter88 = #player.launch.modifier.1 ckenja.crafter88
+    execute if score $marker.tick.counter ckenja.crafter88 matches 2 run scoreboard players operation $tick.player.launch.goal ckenja.crafter88 = #player.launch.modifier.2 ckenja.crafter88
+    execute if score $marker.tick.counter ckenja.crafter88 matches 3 run scoreboard players operation $tick.player.launch.goal ckenja.crafter88 = #player.launch.modifier.3 ckenja.crafter88
+    execute if score $marker.tick.counter ckenja.crafter88 matches 4 run scoreboard players operation $tick.player.launch.goal ckenja.crafter88 = #player.launch.modifier.4 ckenja.crafter88
+    execute if score $marker.tick.counter ckenja.crafter88 matches 5.. run scoreboard players operation $tick.player.launch.goal ckenja.crafter88 = #player.launch.modifier.5 ckenja.crafter88
     scoreboard players operation $x delta.api.launch *= $tick.player.launch.goal ckenja.crafter88
     scoreboard players operation $y delta.api.launch *= $tick.player.launch.goal ckenja.crafter88
     scoreboard players operation $z delta.api.launch *= $tick.player.launch.goal ckenja.crafter88
@@ -66,5 +65,5 @@
 
 # 吹っ飛ばしてリセット、攻撃処理
     execute positioned as @s run function delta:api/launch_xyz
-    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.place.marker.attackArray.isAttack run function ckenja.crafter88:tick/player/launch/attack
-    data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.place.marker.attackArray
+    execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.marker.attackArray.isAttack run function ckenja.crafter88:tick/player/launch/attack
+    data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.marker.attackArray

@@ -31,15 +31,15 @@
 #@within
 #   function ckenja.crafter88:tick/_
 #   function ckenja.crafter88:init/_
-#   * ckenja.crafter88:place/marker/**
-    #declare score_holder #place.marker.boolean
+#   * ckenja.crafter88:marker/**
+    #declare score_holder #marker.boolean
 
 #> Tag
 # @within
-#   function ckenja.crafter88:place/**
+#   function ckenja.crafter88:**
 #   function ckenja.crafter88:tick/**
-    #declare tag ckenja.crafter88.place.marker
-    #declare score_holder $place.ownerID
+    #declare tag ckenja.crafter88.marker
+    #declare score_holder $player_id
 
 #> player id by ohmydat
 #@internal

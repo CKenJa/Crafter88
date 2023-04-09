@@ -13,4 +13,4 @@ execute store result score $skill.item.id ckenja.structure_memory run data get s
 #function ckenja.structure_memory:api/rotate
 
 # 構造物IDを保存してmarkerを召喚。
-function ckenja.crafter88:place/right_click
+function ckenja.crafter88:marker/right_click
