@@ -1,6 +1,6 @@
 #> ckenja.structure_memory:access/_
 #
-# 指定されたIDの座標を返します。構造物は~16 ~16 ~16 ~47 ~47 ~47に保存してあります
+# 指定されたIDの座標を返します。構造物はckenja.structure_memory:voidディメンションの~16 ~16 ~16 ~47 ~47 ~47に保存してあります
 #
 # @input
 #   score

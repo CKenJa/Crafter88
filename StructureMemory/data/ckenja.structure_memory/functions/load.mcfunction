@@ -20,8 +20,10 @@ scoreboard players set #max_x ckenja.structure_memory 8
 #@internal
     #declare score_holder #page_size
     #declare score_holder #chunk_size
+    #declare score_holder #structure_size
 scoreboard players set #page_size ckenja.structure_memory 64
 scoreboard players set #chunk_size ckenja.structure_memory 16
+scoreboard players set #structure_size ckenja.structure_memory 48
 
 #>
 #@within
