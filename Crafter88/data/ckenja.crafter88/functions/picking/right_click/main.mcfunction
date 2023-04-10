@@ -8,4 +8,4 @@
 execute if entity @s[tag=ckenja.crafter88.picking.start] run function ckenja.crafter88:picking/start/right_click
 
 # 仮の登録処理
-execute if data storage ckenja.crafter88: tick{picked:false} run function ckenja.crafter88:picking/register/_
+#execute if data storage ckenja.crafter88: tick{picked:false} run function ckenja.crafter88:picking/register/_
