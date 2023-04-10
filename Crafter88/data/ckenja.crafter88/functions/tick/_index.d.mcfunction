@@ -7,4 +7,4 @@
 
 #> 落下ダメージ無効化処理に使う
 #@within function ckenja.crafter88:tick/**
-#declare score_holder $tick.player.slow_falling.timer
+#declare score_holder #tick.player.slow_falling.timer

@@ -5,6 +5,7 @@
         "void_air",
         "water",
         "lava",
-        "structure_void"
+        "structure_void",
+        "#minecraft:replaceable_plants"
     ]
 }

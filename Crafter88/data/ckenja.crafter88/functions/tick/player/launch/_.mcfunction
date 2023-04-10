@@ -16,6 +16,7 @@
 
 # 移動速度を0にしないとMotion関係なく動くだろお前
     attribute @s generic.movement_speed modifier add c145c31f-0f69-4e87-a826-0227fe45323c "stan" -1 add
+    effect give @s slow_falling 1 0 true
 
 # 向き決めて
     scoreboard players reset $x delta.api.launch

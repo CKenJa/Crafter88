@@ -17,6 +17,6 @@ execute store result storage ckenja.crafter88: tick.time int 1 run time query ga
 
 # 各プレイヤーのカウンタを減らす。advancementに対応するためにmarker処理の前じゃないといけないけど面倒なのでまとめてやっちゃう
 # 置いた後に吹っ飛ぶ
-    scoreboard players add $tick.player.slow_falling.timer ckenja.crafter88 1
+    scoreboard players add #tick.player.slow_falling.timer ckenja.crafter88 1
     execute as @a at @s run function ckenja.crafter88:tick/player/_
-    execute if score $tick.player.slow_falling.timer ckenja.crafter88 matches 4.. run scoreboard players reset $tick.player.slow_falling.timer ckenja.crafter88
+    execute if score #tick.player.slow_falling.timer ckenja.crafter88 matches 4.. run scoreboard players reset #tick.player.slow_falling.timer ckenja.crafter88

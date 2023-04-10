@@ -8,11 +8,13 @@ data modify storage ckenja.crafter88: marker.directionList set value []
 
 # 0 20 0からcloneしてブロック持ってくる
     data modify storage anywhere: function set value "ckenja.crafter88:marker/clone"
-    data modify storage anywhere: at set value {Pos:[0d,0d,0d],Dimension:"minecraft:overworld"}
+    data modify storage anywhere: at set value {Pos:[0d,0d,0d],Dimension:"ckenja.structure_memory:void"}
     execute store result storage anywhere: at.Pos[0] double 1 run scoreboard players get @s ckenja.crafter88.x
     execute store result storage anywhere: at.Pos[1] double 1 run scoreboard players get @s ckenja.crafter88.y
     execute store result storage anywhere: at.Pos[2] double 1 run scoreboard players get @s ckenja.crafter88.z
     function #anywhere:run
+    clone 0 20 0 0 20 0 ~ ~ ~ replace
+    setblock ~ ~ ~ air destroy
     clone 0 20 0 0 20 0 ~ ~ ~ replace
 
 # 次tickのマーカーを召喚する。

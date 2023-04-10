@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function ckenja.crafter88:skill/start
+# @within function ckenja.crafter88:skill/main
 
 scoreboard players operation $player_id ckenja.crafter88 = @s OhMyDatID
 execute if block ~ ~ ~ #ckenja.crafter88:air summon marker run function ckenja.crafter88:marker/init/first

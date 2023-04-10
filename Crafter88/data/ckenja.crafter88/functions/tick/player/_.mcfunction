@@ -26,7 +26,7 @@ function ckenja.crafter88:tick/player/precount
 execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.marker.attackArray run function ckenja.crafter88:tick/player/launch/_
 
 # 落下ダメージ消す
-    execute if score $tick.player.slow_falling.timer ckenja.crafter88 matches 4 run execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:6,Age:4,Effects:[{Id:28b,Amplifier:0b,Duration:2,ShowParticles:0b}]}
+    execute if score #tick.player.slow_falling.timer ckenja.crafter88 matches 4 run execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:6,Age:4,Effects:[{Id:28b,Amplifier:0b,Duration:2,ShowParticles:0b}]}
 
 # 作成処理。tag.ckenja.crafter88は常に存在しないので消す必要あり
     data modify storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88 set from entity @s SelectedItem.tag.ckenja.crafter88
