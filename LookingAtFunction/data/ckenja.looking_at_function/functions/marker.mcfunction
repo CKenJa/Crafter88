@@ -2,8 +2,9 @@
 #
 #
 #
-# @within function ckenja.looking_at_function:run2
+# @within function ckenja.looking_at_function:run
 
 function #util:pass_through
 function ckenja.looking_at_function:loop
-kill @s
+# セレクタで取りたいからkillは最後
+    kill @s

@@ -2,8 +2,7 @@
 #
 #
 #
-# @within function ckenja.looking_at_function:loop
+# @within function ckenja.looking_at_function:loop.end
 
-data remove storage util: out
 execute unless data storage ckenja.looking_at_function: {as_entity:true} run function #ckenja.looking_at_function:marker
 execute if data storage ckenja.looking_at_function: {as_entity:true} as @a[tag=ckenja.looking_at_function.right_click,distance=..7] run function #ckenja.looking_at_function:player

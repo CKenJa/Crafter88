@@ -12,3 +12,7 @@
 #>
 #@public
 #declare storage ckenja.looking_at_function:
+
+#> lib
+#@public
+#declare storage util:_

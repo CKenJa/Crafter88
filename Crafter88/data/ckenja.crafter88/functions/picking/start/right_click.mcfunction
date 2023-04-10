@@ -1,4 +1,4 @@
-#> ckenja.crafter88:picking/start/right_click
+ #> ckenja.crafter88:picking/start/right_click
 #
 #
 #

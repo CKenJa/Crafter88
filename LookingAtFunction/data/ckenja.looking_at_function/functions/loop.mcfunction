@@ -3,11 +3,13 @@
 #
 #
 # @within
-#   function ckenja.looking_at_function:loop2
+#   function ckenja.looking_at_function:x.z
+#   function ckenja.looking_at_function:y.z
+#   function ckenja.looking_at_function:z.y
 #   function ckenja.looking_at_function:marker
 
-#declare score_holder $picking.fake_break
-
-execute store success score $picking.fake_break ckenja.crafter88 run execute if block ~ ~ ~ #ckenja.crafter88:air
-execute if score $picking.fake_break ckenja.crafter88 matches 0 run function ckenja.looking_at_function:not_air
-execute if score $picking.fake_break ckenja.crafter88 matches 1 run function ckenja.looking_at_function:loop2
+#declare score_holder $is_air
+data modify storage ckenja.looking_at_function: isAir set value 0
+execute if block ~ ~ ~ #ckenja.looking_at_function:air if entity @a[tag=ckenja.looking_at_function.right_click,distance=..5] run data modify storage ckenja.looking_at_function: isAir set value 1
+execute if data storage ckenja.looking_at_function: {isAir:0} run function ckenja.looking_at_function:loop.end
+execute if data storage ckenja.looking_at_function: {isAir:1} run function ckenja.looking_at_function:loop2
