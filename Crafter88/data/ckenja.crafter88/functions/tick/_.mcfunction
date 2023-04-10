@@ -8,9 +8,10 @@
 #@private
 #declare score_holder $tick.unequalTime
 
-#前提: 召喚時にプレイヤーごとにカウンターが設定。召喚スタートは0の時にしか行えない。
 execute store result storage ckenja.crafter88: tick.time int 1 run time query gametime
+data modify storage ckenja.crafter88: tick.picked set value false
 
+# 前提: 召喚時にプレイヤーごとにカウンターが設定。召喚スタートは0の時にしか行えない。
 # 召喚したエンティティがセレクタに引っかからないように時間一致を調べる。gametimeは太陽が止まってもちゃんと動く
 # カウンタを実行者に、オーナーのカウンタが1のmarkerに処理を実行。0じゃないのは召喚スタート時の即設置への対応が面倒だったから
     execute as @e[type=marker,tag=ckenja.crafter88.marker] at @s run function ckenja.crafter88:marker/tick/pre

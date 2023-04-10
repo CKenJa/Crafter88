@@ -43,4 +43,5 @@
     scoreboard players operation $init.first.pos.x ckenja.crafter88 += $skill.start_pos.x ckenja.crafter88
     scoreboard players operation $init.first.pos.y ckenja.crafter88 += $skill.start_pos.y ckenja.crafter88
     scoreboard players operation $init.first.pos.z ckenja.crafter88 += $skill.start_pos.z ckenja.crafter88
-    function ckenja.crafter88:marker/right_click
+
+function ckenja.crafter88:marker/right_click
