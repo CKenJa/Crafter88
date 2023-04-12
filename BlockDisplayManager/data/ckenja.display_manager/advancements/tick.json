@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "trigger": {
+            "trigger": "tick"
+        }
+    },
+    "rewards": {
+        "function": "ckenja.display_manager:player_init"
+    }
+}
