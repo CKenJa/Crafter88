@@ -4,6 +4,10 @@
 #
 # @within function ckenja.crafter88:right_click/_
 
-data modify storage ckenja.looking_at_function: function set value "ckenja.crafter88:picking/right_click"
-data modify storage ckenja.looking_at_function: as_entity set value true
-function ckenja.looking_at_function:run
+#>
+#@private
+#declare score_holder $picking.right_click.direction
+
+execute store success score $picking.right_click.direction ckenja.crafter88 if entity @s[tag=ckenja.crafter88.picking.direction]
+execute if score $picking.right_click.direction ckenja.crafter88 matches 1 run function ckenja.crafter88:picking/direction/right_click
+execute if score $picking.right_click.direction ckenja.crafter88 matches 0 run function ckenja.crafter88:picking/right_click/looking

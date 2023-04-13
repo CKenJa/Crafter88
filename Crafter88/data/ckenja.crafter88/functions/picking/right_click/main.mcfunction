@@ -4,7 +4,8 @@
 #
 # @within function ckenja.crafter88:looking_at_function.player.listener
 
-
+execute if entity @s[tag=ckenja.crafter88.picking.pos2] run function ckenja.crafter88:picking/pos2/right_click
+execute if entity @s[tag=ckenja.crafter88.picking.pos1] run function ckenja.crafter88:picking/pos1/right_click
 execute if entity @s[tag=ckenja.crafter88.picking.start] run function ckenja.crafter88:picking/start/right_click
 
 # 仮の登録処理

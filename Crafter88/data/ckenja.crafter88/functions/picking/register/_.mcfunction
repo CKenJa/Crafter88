@@ -2,11 +2,7 @@
 #
 # サイズ($tmp.input.size.x)・開始位置の相対座標($picking.start_pos.x)は指定済みとする。
 #
-# @within function ckenja.crafter88:picking/right_click/_
-
-#>
-#@private
-    #declare score_holder $picking.register.skill_id
+# @within function ckenja.crafter88:picking/item/main
 
 data modify storage ckenja.crafter88: tick.picked set value true
 
