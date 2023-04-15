@@ -1,6 +1,6 @@
 #> ckenja.structure_memory:unload/_
 #
-# チチャンクをアンロードします
+# チャンクをアンロードします
 #
 # @input score $tmp.id ckenja.structure_memory
 #

@@ -24,4 +24,4 @@ data modify storage anywhere: function set value "ckenja.structure_memory/rotate
 data modify storage anywhere: at set value {Pos:[0d,16d,0d],Dimension:"ckenja.structure_memory:void"}
 execute store result storage anywhere: at.Pos[0] double 1 run scoreboard players operation $tmp.output.x ckenja.structure_memory += #chunk_size ckenja.structure_memory
 execute store result storage anywhere: at.Pos[2] double 1 run scoreboard players operation $tmp.output.z ckenja.structure_memory += #chunk_size ckenja.structure_memory
-function #anywhere:run
+execute in ckenja.structure_memory:void positioned 0.0 0.0 0.0 run function #anywhere:run

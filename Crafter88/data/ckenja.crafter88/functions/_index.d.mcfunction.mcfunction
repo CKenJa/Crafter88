@@ -40,7 +40,6 @@
 #   function ckenja.crafter88:**
 #   function ckenja.crafter88:tick/**
     #declare tag ckenja.crafter88.marker
-    #declare score_holder $player_id
 
 #> player id by ohmydat
 #@internal

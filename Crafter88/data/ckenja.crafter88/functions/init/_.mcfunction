@@ -23,3 +23,6 @@ scoreboard players set #marker.boolean ckenja.crafter88 1
     scoreboard players set #player.launch.modifier.3 ckenja.crafter88 4980
     scoreboard players set #player.launch.modifier.4 ckenja.crafter88 4557
     scoreboard players set #player.launch.modifier.5 ckenja.crafter88 4466
+
+gamerule naturalRegeneration false
+gamerule keepInventory true

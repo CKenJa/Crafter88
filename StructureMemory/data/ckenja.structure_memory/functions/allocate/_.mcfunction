@@ -21,11 +21,11 @@
     execute store result storage anywhere: at.Pos[0] double 1 run scoreboard players operation $tmp.input.size.x ckenja.structure_memory += #chunk_size ckenja.structure_memory
     execute store result storage anywhere: at.Pos[1] double 1 run scoreboard players operation $tmp.input.size.y ckenja.structure_memory += #chunk_size ckenja.structure_memory
     execute store result storage anywhere: at.Pos[2] double 1 run scoreboard players operation $tmp.input.size.z ckenja.structure_memory += #chunk_size ckenja.structure_memory
-    execute unless data storage anywhere: at{Pos:[64d,64d,64d]} run function #anywhere:run
+    execute unless data storage anywhere: at{Pos:[64d,64d,64d]} in ckenja.structure_memory:void positioned 0.0 0.0 0.0 run function #anywhere:run
 
 # 保存場所へ移動させる。チャンクロード開始・解除も忘れずに。
     data modify storage anywhere: function set value "ckenja.structure_memory/allocate/save"
     data modify storage anywhere: at set value {Pos:[0d,0d,0d],Dimension:"ckenja.structure_memory:void"}
     execute store result storage anywhere: at.Pos[0] double 1 run scoreboard players get $tmp.output.x ckenja.structure_memory
     execute store result storage anywhere: at.Pos[2] double 1 run scoreboard players get $tmp.output.z ckenja.structure_memory
-    function #anywhere:run
+    execute in ckenja.structure_memory:void positioned 0.0 0.0 0.0 run function #anywhere:run

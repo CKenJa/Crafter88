@@ -28,9 +28,14 @@ execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.craf
 # 落下ダメージ消す
     execute if score #tick.player.slow_falling.timer ckenja.crafter88 matches 4 run execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:6,Age:4,Effects:[{Id:28b,Amplifier:0b,Duration:2,ShowParticles:0b}]}
 
+data modify storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88 set from entity @s SelectedItem.tag.ckenja.crafter88
+
+# interaction出し
+    execute if data storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88{id:"skill"} run function ckenja.crafter88:tick/player/summon_interaction
+
 # 作成処理。tag.ckenja.crafter88は常に存在しないので消す必要あり
-    data modify storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88 set from entity @s SelectedItem.tag.ckenja.crafter88
+    execute unless data storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88{id:"picking"} if entity @s[tag=ckenja.crafter88.picking.tick.have_display] run function ckenja.crafter88:picking/tick/kill
     execute if data storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88{id:"picking"} run function ckenja.crafter88:picking/tick/_
     execute if entity @s[tag=ckenja.crafter88.picking.item] run function ckenja.crafter88:picking/item/tick
-    execute unless data storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88{id:"picking"} if entity @s[tag=ckenja.crafter88.picking.tick.have_display] run function ckenja.crafter88:picking/tick/kill
+
     data remove storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88

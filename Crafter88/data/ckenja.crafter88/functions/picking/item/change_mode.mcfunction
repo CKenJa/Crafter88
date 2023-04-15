@@ -1,4 +1,4 @@
-#> ckenja.crafter88:picking/item/success
+#> ckenja.crafter88:picking/item/change_mode
 #
 #
 #

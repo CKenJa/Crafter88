@@ -30,6 +30,7 @@
     setblock 16 15 16 structure_block{name:"ckenja.structure_memory:tmp",posX:0,posY:1,posZ:0,sizeX:48,sizeY:48,sizeZ:48,rotation:"NONE",mirror:"NONE",mode:"LOAD",ignoreEntities:1b}
     scoreboard players operation $tmp.pos.x ckenja.structure_memory = $tmp.input.size.x ckenja.structure_memory
     scoreboard players operation $tmp.pos.z ckenja.structure_memory = $tmp.input.size.z ckenja.structure_memory
+    execute unless score $tmp.input.rotate ckenja.structure_memory matches 180 unless score $tmp.input.rotate ckenja.structure_memory matches 0 run scoreboard players operation $tmp.pos.x ckenja.structure_memory >< $tmp.pos.z ckenja.structure_memory
     execute if score $tmp.input.rotate ckenja.structure_memory matches 90..180 store result block 16 15 16 posX int 1 run scoreboard players remove $tmp.pos.x ckenja.structure_memory 1
     execute if score $tmp.input.rotate ckenja.structure_memory matches 180..270 store result block 16 15 16 posZ int 1 run scoreboard players remove $tmp.pos.z ckenja.structure_memory 1
 

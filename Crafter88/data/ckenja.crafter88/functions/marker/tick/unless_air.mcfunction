@@ -6,16 +6,20 @@
 
 data modify storage ckenja.crafter88: marker.directionList set value []
 
-# 0 20 0からcloneしてブロック持ってくる
+# 0 0 0経由でcloneしてブロック持ってくる
     data modify storage anywhere: function set value "ckenja.crafter88:marker/clone"
     data modify storage anywhere: at set value {Pos:[0d,0d,0d],Dimension:"ckenja.structure_memory:void"}
     execute store result storage anywhere: at.Pos[0] double 1 run scoreboard players get @s ckenja.crafter88.x
     execute store result storage anywhere: at.Pos[1] double 1 run scoreboard players get @s ckenja.crafter88.y
     execute store result storage anywhere: at.Pos[2] double 1 run scoreboard players get @s ckenja.crafter88.z
     function #anywhere:run
-    clone 0 20 0 0 20 0 ~ ~ ~ replace
-    setblock ~ ~ ~ air destroy
-    clone 0 20 0 0 20 0 ~ ~ ~ replace
+    execute if data storage ckenja.crafter88: marker.clone{anywhere:"0"} run function ckenja.crafter88:marker/tick/place/normal
+    execute if data storage ckenja.crafter88: marker.clone{anywhere:"+X"} run function ckenja.crafter88:marker/tick/place/x
+    execute if data storage ckenja.crafter88: marker.clone{anywhere:"+Y"} run function ckenja.crafter88:marker/tick/place/y
+    execute if data storage ckenja.crafter88: marker.clone{anywhere:"+Z"} run function ckenja.crafter88:marker/tick/place/z
+    execute if data storage ckenja.crafter88: marker.clone{anywhere:"-X"} run function ckenja.crafter88:marker/tick/place/-x
+    execute if data storage ckenja.crafter88: marker.clone{anywhere:"-Y"} run function ckenja.crafter88:marker/tick/place/-y
+    execute if data storage ckenja.crafter88: marker.clone{anywhere:"-Z"} run function ckenja.crafter88:marker/tick/place/-z
 
 # 次tickのマーカーを召喚する。
 # 自分がどの方向から出てきたか保存してると軽量化できる(結論: ブロック取ってきた方が軽い)
