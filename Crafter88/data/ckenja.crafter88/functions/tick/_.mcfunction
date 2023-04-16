@@ -18,7 +18,10 @@ data modify storage ckenja.crafter88: tick.picked set value false
 
 # 各プレイヤーのカウンタを減らす。advancementに対応するためにmarker処理の前じゃないといけないけど面倒なのでまとめてやっちゃう
 # 置いた後に吹っ飛ぶ
-    kill @e[type=interaction,tag=ckenja.crafter88.interaction]
     scoreboard players add #tick.player.slow_falling.timer ckenja.crafter88 1
     execute as @a at @s run function ckenja.crafter88:tick/player/_
     execute if score #tick.player.slow_falling.timer ckenja.crafter88 matches 4.. run scoreboard players reset #tick.player.slow_falling.timer ckenja.crafter88
+# 今tickに召喚されてないinteractionを消す。2個存在してもいいから常に存在させるように
+    scoreboard players operation #tick.1tick_timer ckenja.crafter88 *= #-1 ckenja.crafter88
+    execute if score #tick.1tick_timer ckenja.crafter88 matches 1 run kill @e[type=interaction,tag=ckenja.crafter88.interaction.1]
+    execute if score #tick.1tick_timer ckenja.crafter88 matches -1 run kill @e[type=interaction,tag=ckenja.crafter88.interaction.-1]

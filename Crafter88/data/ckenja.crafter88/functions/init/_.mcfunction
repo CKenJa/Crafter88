@@ -26,3 +26,5 @@ scoreboard players set #marker.boolean ckenja.crafter88 1
 
 gamerule naturalRegeneration false
 gamerule keepInventory true
+
+scoreboard players set #tick.1tick_timer ckenja.crafter88 1

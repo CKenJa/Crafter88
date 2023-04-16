@@ -4,8 +4,7 @@
         "trigger": "minecraft:player_hurt_entity",
         "conditions": {
           "entity": {
-            "type": "minecraft:interaction",
-            "nbt": "{Tags:[\"ckenja.crafter88.interaction\"]}"
+            "type": "minecraft:interaction"
           }
         }
       }

@@ -1,14 +1,5 @@
 {
 	"criteria": {
-		"interaction": {
-			"trigger": "minecraft:player_interacted_with_entity",
-			"conditions": {
-				"entity": {
-					"type": "minecraft:interaction",
-					"nbt": "{Tags:[\"ckenja.crafter88.interaction\"]}"
-				}
-			}
-		},
 		"using_item": {
 			"trigger": "minecraft:using_item"
 		},
@@ -30,7 +21,6 @@
 	},
 	"requirements": [
 		[
-			"interaction",
 			"using_item",
 			"consume_item",
 			"shot_crossbow",
