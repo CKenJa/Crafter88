@@ -8,10 +8,6 @@
 #   function ckenja.looking_at_function:z.y
 #   function ckenja.looking_at_function:marker
 
-#>
-#@private
-    #declare score_holder $is_air
-
 # execute storeは途中のサブコマンドで条件を満たさない場合など、値が代入されない場合もあるので、リセットする
     data modify storage ckenja.looking_at_function: isAir set value 1
     execute unless block ~ ~ ~ #ckenja.looking_at_function:air run data modify storage ckenja.looking_at_function: isAir set value 0
