@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function ckenja.crafter88:skill/start
+# @within function ckenja.crafter88:skill/is_air.pre
 
 function ckenja.crafter88:skill/get_direction
 # 吹っ飛ばし用に方向を変換

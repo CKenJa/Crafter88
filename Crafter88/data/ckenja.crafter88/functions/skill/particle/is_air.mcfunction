@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function ckenja.crafter88:skill/particle/_
+# @within function ckenja.crafter88:skill/particle/is_air.pre
 
 data modify storage ckenja.crafter88: skill.particle set value "is_air"
 # 吹っ飛ばし用に方向を変換
