@@ -44,11 +44,11 @@
         "error",
         [
             {
-                "label": "chained_snake_case",
+                "label": "chained_snake_case_and_-",
                 "allowLessParts": true,
                 "allowMoreParts": true,
                 "sep": ".",
-                "parts": "/^([a-zA-Z\\d]+(_[a-zA-Z\\d]+)*)+$/",
+                "parts": "/^([a-zA-Z-\\d]+(_[a-zA-Z-\\d]+)*)+$/",
             },
             {
                 "label": "this",
