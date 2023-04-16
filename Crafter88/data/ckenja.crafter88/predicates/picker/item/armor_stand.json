@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "tag": "ckenja.crafter88:nable_skill"
+            }
+        }
+    }
+}

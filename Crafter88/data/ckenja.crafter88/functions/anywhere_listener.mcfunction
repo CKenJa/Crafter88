@@ -5,5 +5,4 @@
 # @within tag/function anywhere:functions
 
 execute if data storage anywhere: {function:"ckenja.crafter88:marker/clone"} run function ckenja.crafter88:marker/clone/anywhere
-execute if data storage anywhere: {function:"ckenja.crafter88:picking/item"} run function ckenja.crafter88:picking/register/check_loaded
-execute if data storage anywhere: {function:"ckenja.crafter88:marker/init/double"} if block ~ ~ ~ #ckenja.crafter88:double run function ckenja.crafter88:marker/init/double.anywhere
+execute if data storage anywhere: {function:"ckenja.crafter88:picker/item"} run function ckenja.crafter88:picker/register/check_chunk_loaded

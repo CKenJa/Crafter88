@@ -4,8 +4,8 @@
 #
 # @within tag/function util:init
 
-data modify storage ckenja.crafter88: picking.pos.min set value [0.0,0.0,0.0]
-data modify storage ckenja.crafter88: picking.pos.max set value [0.0,0.0,0.0]
+data modify storage ckenja.crafter88: picker.pos.min set value [0.0,0.0,0.0]
+data modify storage ckenja.crafter88: picker.pos.max set value [0.0,0.0,0.0]
 
 scoreboard objectives add ckenja.crafter88 dummy
 scoreboard objectives add ckenja.crafter88.x dummy
