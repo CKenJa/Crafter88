@@ -4,6 +4,7 @@
 #
 # @within function ckenja.crafter88:picker/register/check_chunk_loaded
 
+tellraw @a {"text":"技を保存しています...ラグが発生することがあります。"}
 scoreboard players set $picker.message.loaded ckenja.crafter88 1
 scoreboard players set $picker.message.success ckenja.crafter88 1
 data modify storage ckenja.crafter88: tick.picked set value true
