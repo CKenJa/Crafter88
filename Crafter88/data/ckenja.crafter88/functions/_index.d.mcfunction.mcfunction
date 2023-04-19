@@ -8,7 +8,6 @@
 #> external library datas
 # @public
     #declare storage util:
-    #declare storage rom:
 
 #> tag for interaction
 # 将来的にinteraction使わないと思うからまとめず放置

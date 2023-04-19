@@ -31,11 +31,11 @@ execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.craf
 data modify storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88 set from entity @s SelectedItem.tag.ckenja.crafter88
 
 # interaction出し
-    execute if data storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88{id:"skill"} run function ckenja.crafter88:tick/player/summon_interaction
+    execute if data storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88{id:"skill"} run function ckenja.crafter88:tick/player/interaction
 
 # 作成処理。tag.ckenja.crafter88は常に存在しないので消す必要あり
     execute unless data storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88{id:"picker"} if entity @s[tag=ckenja.crafter88.picker.tick.have_display] run function ckenja.crafter88:picker/tick/kill
     execute if data storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88{id:"picker"} run function ckenja.crafter88:picker/tick/_
-    execute if entity @s[tag=ckenja.crafter88.picker.item] run function ckenja.crafter88:picker/item/tick
+    execute if entity @s[tag=!ckenja.crafter88.picker.start] run function ckenja.crafter88:picker/item/tick
 
     data remove storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88

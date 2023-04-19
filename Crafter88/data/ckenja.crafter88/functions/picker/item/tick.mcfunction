@@ -4,6 +4,7 @@
 #
 # @within function ckenja.crafter88:tick/player/_
 
+execute store result score $picker.set_item_mode ckenja.crafter88 if entity @s[tag=ckenja.crafter88.picker.item]
 tag @s add ckenja.crafter88.picker.item.origin
 execute at @s anchored eyes positioned ^ ^ ^ as @e[type=item,tag=!ckenja.crafter88.picker.item.processed,distance=..1,sort=nearest,limit=1] run function ckenja.crafter88:picker/item/check_item_owner
 tag @s remove ckenja.crafter88.picker.item.origin
@@ -23,8 +24,8 @@ execute if score $picker.message.loaded ckenja.crafter88 matches 0 run function 
 execute if score $picker.message.unusable_item ckenja.crafter88 matches 1 run tellraw @s {"text":"そのアイテムは使えません"}
 execute if score $picker.message.skill ckenja.crafter88 matches 1 run tellraw @s {"text":"スキルを上書きすることはできません"}
 
-execute if score $picker.message.size ckenja.crafter88 matches 0 run scoreboard players set $picker.cancel ckenja.crafter88 1
-execute if score $picker.message.start ckenja.crafter88 matches 0 run scoreboard players set $picker.cancel ckenja.crafter88 1
+execute if score $picker.message.size ckenja.crafter88 matches 0 run scoreboard players set $picker.message.cancel ckenja.crafter88 1
+execute if score $picker.message.start ckenja.crafter88 matches 0 run scoreboard players set $picker.message.cancel ckenja.crafter88 1
 execute if score $picker.message.cancel ckenja.crafter88 matches 1 run tellraw @s {"text":"キャンセルしました"}
 
 scoreboard players reset $picker.message.cancel ckenja.crafter88

@@ -8,6 +8,9 @@
 #@private
 #declare score_holder $marker.init.counter
 
+# 貫通判定
+execute if score $marker.pierced ckenja.crafter88 matches 1 unless entity @e[type=marker,tag=ckenja.crafter88.marker.used,distance=..0.01] run data modify storage ckenja.crafter88: marker.init.data.ckenja.crafter88.pierce set value true
+
 # 召喚marker数カウント
     # 赤石愛氏のCloseDetectorに登場する謎のカウントアップを参考にしたら動かなかった！原理がわからないものを使うな！
     # https://github.com/Ai-Akaishi/CloseDetector/blob/a79c3808977aea99046305d151befe5c15928794/data/close_detector/functions/check_inventory/save/now.mcfunction#L8
