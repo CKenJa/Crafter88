@@ -5,5 +5,4 @@
 # @within function ckenja.crafter88:marker/init/_
 
 execute if entity @s[type=player] run function ckenja.crafter88:marker/tick/player
-execute if entity @s[type=!player] run function ckenja.crafter88:marker/tick/entity
-say y
+execute if entity @s[type=!player,type=!marker,type=!interaction] run function ckenja.crafter88:marker/tick/entity

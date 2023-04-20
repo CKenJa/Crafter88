@@ -4,9 +4,8 @@
 #
 # @within function ckenja.crafter88:tick/player/launch/_
 
-#scoreboard players operation $tick.player.launch.x ckenja.crafter88 *= #attack_launch_modifier ckenja.crafter88
-#scoreboard players operation $tick.player.launch.y ckenja.crafter88 *= #attack_launch_modifier ckenja.crafter88
-#scoreboard players operation $tick.player.launch.z ckenja.crafter88 *= #attack_launch_modifier ckenja.crafter88
-execute if score $marker.tick.counter ckenja.crafter88 matches ..1 run damage @s 2 player_attack
-execute if score $marker.tick.counter ckenja.crafter88 matches 2.. run damage @s 1 player_attack
-#$strength
+execute store result score $tick.player.launch.attack.player_id ckenja.crafter88 run data get storage ckenja.crafter88: tick.player.launch.attach.player_id
+tag @s add ckenja.crafter88.tick.player.launch.attack
+execute if score $marker.tick.counter ckenja.crafter88 matches ..1 at @s as @a if score @s OhMyDatID = $tick.player.launch.attack.player_id ckenja.crafter88 run damage @e[tag=ckenja.crafter88.tick.player.launch.attack,distance=..0.01,limit=1] 20 player_attack by @s
+execute if score $marker.tick.counter ckenja.crafter88 matches 2.. at @s as @a if score @s OhMyDatID = $tick.player.launch.attack.player_id ckenja.crafter88 run damage @e[tag=ckenja.crafter88.tick.player.launch.attack,distance=..0.01,limit=1] 10 player_attack by @s
+tag @s remove ckenja.crafter88.tick.player.launch.attack

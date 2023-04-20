@@ -25,4 +25,5 @@ effect give @s slow_falling 1 0 true
     execute unless score $tick.entity.launch.z ckenja.crafter88 matches 0 store result entity @s Motion[2] double 0.0001 run scoreboard players get $tick.entity.launch.z ckenja.crafter88
 
 # 吹っ飛ばしてリセット、攻撃処理
+    scoreboard players operation $tick.player.launch.attack.player_id ckenja.crafter88 = $player_id ckenja.crafter88
     function ckenja.crafter88:tick/player/launch/attack

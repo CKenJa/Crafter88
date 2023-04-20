@@ -66,5 +66,6 @@
 
 # 吹っ飛ばしてリセット、攻撃処理
     execute positioned as @s run function delta:api/launch_xyz
+    data modify storage ckenja.crafter88: tick.player.launch.attach.player_id set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.marker.attackArray.player_id
     execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.marker.attackArray.isAttack run function ckenja.crafter88:tick/player/launch/attack
     data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ckenja.crafter88.marker.attackArray
