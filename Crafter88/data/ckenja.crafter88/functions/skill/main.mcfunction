@@ -13,7 +13,7 @@
     #declare score_holder $skill.start_pos.z
 
 # 保存時の方向を取得して方向を修正
-    execute store result score $skill.direction.fix ckenja.crafter88 run data get storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88.item.skill.direction
+    execute store result score $skill.direction.fix ckenja.crafter88 run data get storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88.skill.direction
     scoreboard players operation $skill.direction ckenja.crafter88 -= $skill.direction.fix ckenja.crafter88
     execute unless score $skill.direction ckenja.crafter88 matches 0.. run scoreboard players add $skill.direction ckenja.crafter88 360
     execute unless score $skill.direction ckenja.crafter88 matches ..360 run scoreboard players remove $skill.direction ckenja.crafter88 360
