@@ -1,4 +1,4 @@
-#> ckenja.crafter88:marker/tick/player
+#> ckenja.crafter88:marker/tick/attack
 #
 #
 #

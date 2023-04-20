@@ -20,7 +20,7 @@ execute if score $marker.pierced ckenja.crafter88 matches 1 unless entity @e[typ
 
 tag @s add ckenja.crafter88.marker
 scoreboard players operation @s ckenja.crafter88 = $player_id ckenja.crafter88
-execute align xyz as @a[dx=0,dy=0,dz=0] run function ckenja.crafter88:marker/tick/player
+execute align xyz as @e[dx=0,dy=0,dz=0] run function ckenja.crafter88:marker/tick/attack
 
 data remove storage ckenja.crafter88: marker.tick.attackDirectionArray
 
