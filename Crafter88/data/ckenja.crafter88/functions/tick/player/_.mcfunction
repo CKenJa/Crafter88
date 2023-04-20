@@ -39,3 +39,4 @@ data modify storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafte
     execute if entity @s[tag=!ckenja.crafter88.picker.start] run function ckenja.crafter88:picker/item/tick
 
     data remove storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88
+    item replace entity @s enderchest.0 with crossbow{display:{Name:'{"translate":"ckenja.crafter88.item.picker","fallback":"魔法登録","italic":false}'},HideFlags:32,ckenja:{crafter88:{id:"picker",detecting_crossbow:true}},ChargedProjectiles:[{id:"minecraft:air",Count:1b},{},{}],Charged:1b}
