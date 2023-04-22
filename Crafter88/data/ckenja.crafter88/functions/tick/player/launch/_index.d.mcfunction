@@ -15,3 +15,9 @@
     #declare score_holder $x
     #declare score_holder $y
     #declare score_holder $z
+
+#>
+#@within
+#   function ckenja.crafter88:tick/player/launch/attack
+#   function ckenja.crafter88:marker/tick/entity
+    #declare score_holder $tick.player.launch.attack.player_id

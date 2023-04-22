@@ -2,7 +2,13 @@
 #
 #
 #
-# @within function ckenja.crafter88:tick/player/launch/_
+# @within
+#   function ckenja.crafter88:tick/player/launch/_
+#   function ckenja.crafter88:marker/tick/entity
+
+#>
+# @private
+    #declare tag ckenja.crafter88.tick.player.launch.attack
 
 execute store result score $tick.player.launch.attack.player_id ckenja.crafter88 run data get storage ckenja.crafter88: tick.player.launch.attach.player_id
 tag @s add ckenja.crafter88.tick.player.launch.attack

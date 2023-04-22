@@ -20,19 +20,11 @@
 #@internal
     #declare score_holder #-1
     #declare score_holder #5
-    #declare score_holder #attack_launch_modifier
     #declare score_holder #player.launch.modifier.1
     #declare score_holder #player.launch.modifier.2
     #declare score_holder #player.launch.modifier.3
     #declare score_holder #player.launch.modifier.4
     #declare score_holder #player.launch.modifier.5
-
-#>
-#@within
-#   function ckenja.crafter88:tick/_
-#   function ckenja.crafter88:init/_
-#   * ckenja.crafter88:marker/**
-    #declare score_holder #marker.boolean
 
 #> Tag
 # @within

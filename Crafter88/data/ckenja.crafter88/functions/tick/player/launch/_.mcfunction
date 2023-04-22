@@ -6,13 +6,13 @@
 
 #>
 # @private
-#declare score_holder $tick.player.launch.goal
-#declare score_holder $tick.player.launch.motion.x
-#declare score_holder $tick.player.launch.motion.y
-#declare score_holder $tick.player.launch.motion.z
-#declare score_holder $tick.player.launch.keep.x
-#declare score_holder $tick.player.launch.keep.y
-#declare score_holder $tick.player.launch.keep.z
+    #declare score_holder $tick.player.launch.goal
+    #declare score_holder $tick.player.launch.motion.x
+    #declare score_holder $tick.player.launch.motion.y
+    #declare score_holder $tick.player.launch.motion.z
+    #declare score_holder $tick.player.launch.keep.x
+    #declare score_holder $tick.player.launch.keep.y
+    #declare score_holder $tick.player.launch.keep.z
 
 # 移動速度を0にしないとMotion関係なく動くだろお前
     attribute @s generic.movement_speed modifier add c145c31f-0f69-4e87-a826-0227fe45323c "stan" -1 add

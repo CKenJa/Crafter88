@@ -20,6 +20,7 @@
     scoreboard players operation $skill.direction ckenja.crafter88 -= $skill.direction.fix ckenja.crafter88
     execute unless score $skill.direction ckenja.crafter88 matches 0.. run scoreboard players add $skill.direction ckenja.crafter88 360
     execute unless score $skill.direction ckenja.crafter88 matches ..360 run scoreboard players remove $skill.direction ckenja.crafter88 360
+    #tellraw @a {"score":{"name":"$skill.direction","objective":"ckenja.crafter88"}}
 
 # 合う方向の構造物IDを得る
     execute store result score $tmp.id ckenja.structure_memory run data get storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88.skill.0
@@ -41,15 +42,15 @@
     execute unless score $skill.direction ckenja.crafter88 matches 0 unless score $skill.direction ckenja.crafter88 matches 180 run scoreboard players operation $skill.start_pos.x ckenja.crafter88 >< $skill.start_pos.z ckenja.crafter88
 
 # 開始位置と構造物の座標からコピー元座標を得る
-    scoreboard players operation $init.first.pos.x ckenja.crafter88 = $tmp.output.x ckenja.structure_memory
-    scoreboard players set $init.first.pos.y ckenja.crafter88 16
-    scoreboard players operation $init.first.pos.z ckenja.crafter88 = $tmp.output.z ckenja.structure_memory
-    scoreboard players add $init.first.pos.x ckenja.crafter88 16
-    scoreboard players add $init.first.pos.z ckenja.crafter88 16
-    scoreboard players operation $init.first.pos.x ckenja.crafter88 += $skill.start_pos.x ckenja.crafter88
-    scoreboard players operation $init.first.pos.y ckenja.crafter88 += $skill.start_pos.y ckenja.crafter88
-    scoreboard players operation $init.first.pos.z ckenja.crafter88 += $skill.start_pos.z ckenja.crafter88
+    scoreboard players operation $marker.first.pos.x ckenja.crafter88 = $tmp.output.x ckenja.structure_memory
+    scoreboard players set $marker.first.pos.y ckenja.crafter88 16
+    scoreboard players operation $marker.first.pos.z ckenja.crafter88 = $tmp.output.z ckenja.structure_memory
+    scoreboard players add $marker.first.pos.x ckenja.crafter88 16
+    scoreboard players add $marker.first.pos.z ckenja.crafter88 16
+    scoreboard players operation $marker.first.pos.x ckenja.crafter88 += $skill.start_pos.x ckenja.crafter88
+    scoreboard players operation $marker.first.pos.y ckenja.crafter88 += $skill.start_pos.y ckenja.crafter88
+    scoreboard players operation $marker.first.pos.z ckenja.crafter88 += $skill.start_pos.z ckenja.crafter88
 
-#tellraw @a {"score":{"name":"$skill.direction","objective":"ckenja.crafter88"}}
-
-function ckenja.crafter88:marker/right_click
+# 召喚
+    scoreboard players operation $player_id ckenja.crafter88 = @s OhMyDatID
+    execute if block ~ ~ ~ #ckenja.crafter88:air summon marker run function ckenja.crafter88:marker/init/first
