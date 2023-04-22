@@ -1,0 +1,18 @@
+{
+    "values": [
+        "area_effect_cloud",
+        "armor_stand",
+        "block_display",
+        "falling_block",
+        "glow_item_frame",
+        "interaction",
+        "item_display",
+        "item_frame",
+        "leash_knot",
+        "lightning_bolt",
+        "marker",
+        "player",
+        "shulker",
+        "text_display"
+      ]
+}

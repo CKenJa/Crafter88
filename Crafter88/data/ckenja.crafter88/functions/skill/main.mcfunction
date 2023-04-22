@@ -12,6 +12,9 @@
     #declare score_holder $skill.start_pos.y
     #declare score_holder $skill.start_pos.z
 
+# 技名を叫ぶやつ
+    execute if data storage ckenja.crafter88: right_click.SelectedItem.tag.display.Name run tellraw @a {"nbt": "right_click.SelectedItem.tag.display.Name", "storage": "ckenja.crafter88:", "interpret": true}
+
 # 保存時の方向を取得して方向を修正
     execute store result score $skill.direction.fix ckenja.crafter88 run data get storage ckenja.crafter88: right_click.SelectedItem.tag.ckenja.crafter88.skill.direction
     scoreboard players operation $skill.direction ckenja.crafter88 -= $skill.direction.fix ckenja.crafter88
